@@ -1,0 +1,95 @@
+b {
+    line-height: 1.5;
+}
+
+.dotted-line {
+    border-top: 1px dotted gainsboro;
+    width: 100%;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+    }
+    
+    .row input[type="text"],
+    .row textarea {
+    margin-right: 10px;
+    }
+}
+
+span {
+        text-indent: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid silver;
+    padding: 15px;
+    font-weight: normal;
+}
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+td:first-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.a1 {
+    text-align: left
+}
+
+
+.abc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.submit-button {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #1a1010;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .submit-button:focus {
+    outline: none;
+  }
