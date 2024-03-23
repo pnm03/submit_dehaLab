@@ -1,0 +1,405 @@
+/* Web quá dài:> Cíu tuiiii */
+
+.navbar {
+     display: flex;
+     align-items: center;
+     background-color: rgba(255, 255, 255, 0.9);
+     backdrop-filter: blur(0px);
+     padding: 20px 0;
+     width: 100%;
+     z-index: 999;
+     position: fixed;
+     top: 0;
+   }
+   
+   .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     padding: 0 40px; 
+   }
+   
+   .logo {
+     width: 250px;
+   }
+   
+   .menu {
+     list-style: none;
+     padding: 0;
+     display: flex;
+   }
+   
+   .menu-item {
+     margin-left: 20px;
+   }
+   
+   .menu-link {
+     text-decoration: none;
+     color: #333333;
+     font-weight: bold;
+     transition: color 0.3s ease;
+   }
+   
+   .menu-link:hover {
+     color: #757575;
+   }
+   
+   .toggle-btn {
+     display: none;
+   }
+   
+   @media (max-width: 768px) {
+     .toggle-btn {
+       display: block;
+       cursor: pointer;
+     }
+   
+     .collapse-menu {
+       display: none;
+       width: 100%;
+       background-color: rgba(255, 255, 255, 0.9);
+       backdrop-filter: blur(0.1px);
+       position: absolute;
+       top: 100%;
+       left: 0;
+     }
+   
+     .collapse-menu.active {
+       display: block;
+     }
+   
+     .menu {
+       flex-direction: column;
+       align-items: center;
+       padding: 20px 0;
+       margin-left: 0;
+     }
+   
+     .menu-item {
+       margin: 10px 0;
+     }
+   
+     .menu-link {
+       font-size: 18px;
+       font-weight: bold;
+     }
+   }
+
+
+
+   .banner {
+     position: relative;
+     background-color: #ffffff;
+     overflow: hidden;
+     padding-top: 200px; 
+     padding-left: 70px;
+     padding-bottom: 70px;
+   }
+   
+   .banner-text {
+     width: 35%; 
+   }
+   
+   .welcome-text {
+     color: #03d09d; 
+     font-size: 20px; 
+   }
+
+   .sub-heading {
+     color: #03d09d; 
+     font-size: 15px; 
+   }
+   
+   .main-heading {
+     color: #bf0202; 
+     font-size: 55px; 
+     font-weight: bold; 
+   }
+   
+   .order-btn {
+     background-color: #03d09d;
+     color: #ffffff;
+     padding: 15px 40px; 
+     border: none; 
+     border-radius: 30px; 
+     font-size: 17px; 
+     margin-top: 20px; 
+   }
+   
+
+.about-section {
+     display: flex;
+     width: 100%;
+     background-color: white;
+}
+ 
+.about-image {
+     display: flex;
+     width: 40%;
+     margin-right: 5px; 
+     overflow: hidden; 
+     padding-left: 50px;
+}
+ 
+ .about-text {
+     padding-left: 70px;
+     width: 45%;
+     padding-right: 20px; 
+ }
+ 
+ .about-image img {
+     max-width: 100%; 
+     height: auto;
+     width: 100%; 
+     border-radius: 8px; 
+ }
+
+ .section-title {
+     color: #03d09d;
+     font-size: 24px;
+     padding-bottom: 0px;
+     margin-bottom: 20px;
+   }
+   
+   .about-text h1 {
+     color: #000000;
+     font-size: 40px;
+     font-weight: bold;
+     width: 80%;
+     padding-bottom: 25px;
+     margin-top: 0;
+   }
+   
+   .about-description {
+     color: #000000;
+     font-size: 18px;
+   }
+   
+   .read-more-btn {
+     margin-top: 20px;
+     background-color: #03d09d; 
+     color: #ffffff; 
+     padding: 15px 40px; 
+     border: none;
+     border-radius: 30px; 
+     font-size: 17px; 
+   }
+
+   .banner-a {
+     display: flex;
+     background-color: #f7f7f7;
+     margin-top: 10px;
+     margin-bottom: 30px;
+     padding-top: 50px;
+     padding-bottom: 100px;
+   }
+
+
+
+
+
+#our-services-heading {
+  text-align: center; 
+  margin-bottom: 45px;
+}
+
+.service-item {
+  margin-right: 30px;
+}
+
+.service-image {
+  width: 360px;
+  border-radius: 5px;
+}
+
+.service-details {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  overflow-x: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.service-details h4 {
+  margin-bottom: 5px; 
+}
+
+.service-title {
+  color: #03d09d;
+  font-size: 23px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.service-area {
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+.menu-content-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 60px;
+  padding-right: 10px;
+  background-color: #f7f7f7;
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+
+.menu-header-1 {
+  display: block;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.menu-item-1 {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 80px;
+}
+
+.menu-item-wrapper-1 img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+}
+
+.menu-item-wrapper-1 {
+  display: flex; 
+  align-items: center; 
+}
+
+.menu-item-details-1 {
+  flex: 1;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.menu-item-info-1 {
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.item-name-1::after {
+  content: " ——— ";
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight:  normal;
+}
+
+.item-name-1 {
+  font-size: 21px;
+  margin-bottom: 0px;
+}
+
+.menu-item-details-1 p {
+  color: #4b4b4b;
+  font-size: 17px;
+}
+
+.menu-area-1 {
+  padding-bottom: 30px;
+}
+
+
+
+
+
+.opening-hours-section {
+  display: flex;
+  justify-content: center;
+}
+
+.opening-hours-container {
+  max-width: 600px;
+}
+
+.opening-hours-content {
+  text-align: center;
+  
+}
+
+.opening-hours-heading {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.reservation-number-heading,
+.opening-hours-info {
+  color: #03d09d;
+}
+
+.opening-hours-text-center p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.opening-hours-info {
+  font-size: 28px;
+  padding-bottom: 14px;
+  padding-top: 20px;
+}
+
+.reservation-number-heading {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.weekday-schedule {
+  padding-bottom: 8px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.opening-hours-section {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+
+
+
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.gallery-heading {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.gallery-item {
+  flex: 0 0 calc(25% - 15px);
+  margin-bottom: 15px;
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
