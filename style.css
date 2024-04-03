@@ -1,0 +1,139 @@
+* {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ ol, ul { list-style: none; }
+ 
+ img { border: none; vertical-align: top; }
+ 
+ /* Nội dung layout */
+ #layout {
+     border: 1px solid #a3a2a3;
+     margin: 20px auto;
+     width: 700px;
+ }
+ header, footer, #content, aside, .box-list li {
+     font-size: 30px;
+     text-align: center;
+ }
+ header {
+     background-color: #92dfc8;
+     height: 80px;
+     line-height: 80px;
+ }
+ main {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ #content {
+     background-color: #caeff2;
+     height: 400px;
+     line-height: 400px;
+     width: 500px;
+ }
+ aside {
+     background-color: #f2d8ca;
+     height: 400px;
+     line-height: 400px;
+     width: 200px;
+ }
+ .box-list {
+     display: flex;
+     margin-top: 10px;
+ }
+ .box-list li {
+     background-color: #f2f1ca;
+     height: 150px;
+     line-height: 150px;
+     text-align: center;
+     margin-right: 10px;
+     margin-bottom: 10px;
+     width: 167.49px;
+ }
+ .box-list li:last-child {
+     margin-right: 0;
+ }
+ footer {
+     background-color: #eecbf3;
+     height: 80px;
+     line-height: 80px;
+ }
+
+ 
+
+ @media only screen and (max-width: 700px) {
+     #layout {
+          border: 1px solid #a3a2a3;
+          margin: 20px auto;
+          width: 450px;
+          
+      }
+
+     header {
+          flex-basis: calc(100% );
+         max-width: calc(); 
+     }
+
+     section {
+          flex-basis: calc(100%);
+     }
+
+     aside {
+          flex-basis: calc(100%);
+     }
+ 
+     .box-list {
+         flex-wrap: wrap; 
+     }    
+ 
+     .box-list li {
+         flex-basis: calc(50% - 10px);
+         margin-left: 5px;
+         margin-right: 5px;
+         
+     }
+
+     footer {
+          flex-basis: calc(100%);
+     }
+ }
+
+
+ @media only screen and (max-width: 500px) {
+     #layout {
+          border: 1px solid #9f319f;
+          margin: 20px auto;
+          width: 250px;
+          
+      }
+
+     header {
+          flex-basis: calc(100% );
+         max-width: calc(); 
+     }
+
+     section {
+          flex-basis: calc(100%);
+     }
+
+     aside {
+          flex-basis: calc(100%);
+     }
+ 
+     .box-list {
+         flex-wrap: wrap;
+     }    
+ 
+     .box-list li {
+         flex-basis: calc(100%);
+         margin-left: 0px;
+         margin-right: 0px;
+         
+     }
+
+     footer {
+          flex-basis: calc(100%);
+     }
+ }
+ 
