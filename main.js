@@ -28,6 +28,11 @@ b.onclick = function () {
      arrCV.push(CongViec(i.value));
      let li = document.createElement("li");
      t.appendChild(li);
+
+     let h = document.createElement("input");
+     h.type = "checkbox";
+     li.appendChild(h);
+
      let namevc = document.createElement("p");
      let ngay = document.createElement("p");
      let gio = document.createElement("p");
