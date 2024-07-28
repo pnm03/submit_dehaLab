@@ -25,21 +25,33 @@ function CongViec (tencv) {
      }
 }
 b.onclick = function () {
-     arrCV.push(CongViec(i.value));
-     let li = document.createElement("li");
-     t.appendChild(li);
+     let check = true;
+     for (let k = 0; k < arrCV.length; k++) {
+          if (arrCV[k].tencv === i.value) {
+               check = false;
+          }
+     }
 
-     let h = document.createElement("input");
-     h.type = "checkbox";
-     li.appendChild(h);
+     if (check == false) {
+          alert("Spam caicuckit");
+     }
+     else {
+          arrCV.push(CongViec(i.value));
+          let li = document.createElement("li");
+          t.appendChild(li);
 
-     let namevc = document.createElement("p");
-     let ngay = document.createElement("p");
-     let gio = document.createElement("p");
-     namevc.textContent = arrCV[arrCV.length-1].tencv;
-     ngay.textContent = arrCV[arrCV.length-1].date;
-     gio.textContent = arrCV[arrCV.length-1].time;
-     li.appendChild(namevc);
-     li.appendChild(ngay);
-     li.appendChild(gio);
+          let h = document.createElement("input");
+          h.type = "checkbox";
+          li.appendChild(h);
+
+          let namevc = document.createElement("p");
+          let ngay = document.createElement("p");
+          let gio = document.createElement("p");
+          namevc.textContent = arrCV[arrCV.length-1].tencv;
+          ngay.textContent = arrCV[arrCV.length-1].date;
+          gio.textContent = arrCV[arrCV.length-1].time;
+          li.appendChild(namevc);
+          li.appendChild(ngay);
+          li.appendChild(gio);
+     }
 }
