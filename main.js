@@ -39,6 +39,7 @@ function start () {
   o_vatchoi = document.getElementById(b);
   o_nguoichoi.style.backgroundColor = "green";
   o_vatchoi.style.backgroundColor = "red";
+  let tg = 1000;
   function andiem() {
     if (vitri_vatchoi.x == vitri_nguoichoi.x && vitri_vatchoi.y == vitri_nguoichoi.y) {
       diem++;
@@ -56,6 +57,18 @@ function start () {
       let b = String(vitri_vatchoi.x) + String(vitri_vatchoi.y);
       o_vatchoi = document.getElementById(b);
       o_vatchoi.style.backgroundColor = "red";
+    }
+    if (diem >= 10) {
+      tg = 850;
+    }
+    else if (diem >= 20) {
+      tg = 680
+    }
+    else if (diem >= 35) {
+      tg = 500;
+    }
+    else if (diem >= 55) {
+      tg = 300;
     }
   }
   
@@ -129,6 +142,7 @@ function start () {
   
   
   let check1 = 0;
+  
   // 0 -> ; 1 <- ; 2 ^ ; 3 v ;
   let g = setInterval(() => {
     if (check1 == 0) disangphia();
@@ -143,7 +157,7 @@ function start () {
       o_nguoichoi.style.backgroundColor = "white";
       o_vatchoi.style.backgroundColor = "white";
     }
-  }, 1000)
+  }, tg)
   
   top1.addEventListener("click", () => {
     if (check1 != 2) dilen();
