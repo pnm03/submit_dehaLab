@@ -3,14 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <title>Javascript course</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      #container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+  
+      #hang1, #hang2, #hang3, #hang4, #hang5 {
+        display: flex;
+      }
+  
+      #hang1 > p, #hang2 > p, #hang3 > p, #hang4 > p, #hang5 > p {
+        height: 40px;
+        width: 40px;
+        border: solid 1px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div id = "container" style="text-align: center;">
-      <p>TRO CHOI DOAN SO</p>
-      <input id = "input" style="border: solid 1px rgb(87, 87, 87);">
-      <br><br>
-      <button id = "button" style="border: solid 1px rgb(87, 87, 87); background-color: rgb(245, 250, 255); padding: 5px;">Doan So</button>
-      <p id = "text">Day la mot dong text</p>
+      <p>GAME TIM VI TRI</p>
+      <div id="hang1">
+        <p id = "11"></p>
+        <p id = "12"></p>
+        <p id = "13"></p>
+        <p id = "14"></p>
+        <p id = "15"></p>
+      </div>
+      <div id="hang2">
+        <p id = "21"></p>
+        <p id = "22"></p>
+        <p id = "23"></p>
+        <p id = "24"></p>
+        <p id = "25"></p>
+      </div>
+      <div id="hang3">
+        <p id = "31"></p>
+        <p id = "22"></p>
+        <p id = "33"></p>
+        <p id = "34"></p>
+        <p id = "35"></p>
+      </div>
+      <div id="hang4">
+        <p id = "41"></p>
+        <p id = "42"></p>
+        <p id = "43"></p>
+        <p id = "44"></p>
+        <p id = "45"></p>
+      </div>
+      <div id="hang5">
+        <p id = "51"></p>
+        <p id = "52"></p>
+        <p id = "53"></p>
+        <p id = "54"></p>
+        <p id = "55"></p>
+      </div>
+      <p>Diem: 0</p>
+      <div>
+        <button id = "top" style="height: 35px; width: 35px; font-size: 22px;"> ^ </button>
+        <button id = "down"style="height: 35px; width: 35px; font-size: 22px;"> v </button>
+        <br>
+        <button id = "left"style="height: 35px; width: 35px; font-size: 22px;"> < </button>
+        <button id = "right"style="height: 35px; width: 35px; font-size: 22px;"> > </button>
+      </div>
+
     </div>
     
     <script type="text/javascript" src="./main.js"></script>
