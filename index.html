@@ -31,6 +31,39 @@
         justify-content: center;
         margin: 0;
       }
+
+      #bo_button {
+            display: grid;
+            grid-template-areas:
+                " .  top  . "
+                "left . right"
+                " . down . ";
+            grid-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .button {
+            height: 100px;
+            width: 100px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top {
+            grid-area: top;
+        }
+        #left {
+            grid-area: left;
+        }
+        #right {
+            grid-area: right;
+        }
+        #down {
+            grid-area: down;
+        }
     </style>
   </head>
   <body>
@@ -74,13 +107,12 @@
       <p id = "diem">Diem: 0</p>
       <button id = "reset" style="height: 40px; width: 200px; font-size: 22px;">Choi Moi</button>
       <br>
-      <div id = "bo_button">
-        <button id = "top" style="height: 100px; width: 100px; font-size: 25px;"> ^ </button>
-        <button id = "down"style="height: 100px; width: 100px; font-size: 25px;"> v </button>
-        <br>
-        <button id = "left"style="height: 100px; width: 100px; font-size: 25px;"> < </button>
-        <button id = "right"style="height: 100px; width: 100px; font-size: 25px;"> > </button>
-      </div>
+      <div id="bo_button">
+        <button id="top" class="button"> ^ </button>
+        <button id="left" class="button"> &lt; </button>
+        <button id="right" class="button"> &gt; </button>
+        <button id="down" class="button"> v </button>
+    </div>
 
 
     </div>
