@@ -6,6 +6,10 @@ let nguoi_choi = document.getElementById("nguoi_choi");
 let diem_so = document.getElementById("diem_so");
 let b_play = document.getElementById("b_play");
 
+function reload () {
+  location.reload();
+}
+
 // ham random vi tri cua vat_choi
 function random_rong () {
   return Math.floor(Math.random() * (5 - 0)) + 0;
@@ -44,7 +48,8 @@ function r_bot (phantu, value = 0) {
 }
 
 function start_game () {
-  khung_choi.style.color = "black";
+  vat_roi.style.display = "";
+  r_bot(vat_roi, 375);
   b_play.style.display = "none";
   let diem_game = 0;
   const o_vuong = 50;
@@ -55,13 +60,13 @@ function start_game () {
     if (r_bot(vat_roi) >= 0) {
       if (r_bot(nguoi_choi) - r_bot(vat_roi) > 10) {
         let a = setInterval (() => {
-          if (r_bot(vat_roi) > 0) {
-            r_bot(vat_roi, -1);
+          if (r_bot(vat_roi) < 0) {
+            clearInterval(auto_roi);
+            clearInterval(a);
+            location.reload();
           }
           else {
-            khung_choi.style.color = "red";
-            b_play.style.display = "";
-            bd();
+            r_bot(vat_roi, -1);
           }
         }, 1);
       }
@@ -89,9 +94,9 @@ function start_game () {
       r_bot(vat_roi, -1);
     }
     else {
-      khung_choi.style.color = "red";
-      b_play.style.display = "";
-      bd();
+      clearInterval(auto_roi);
+      location.reload();
+      
     }
   }, lv);
 
@@ -124,9 +129,6 @@ function start_game () {
   });
 }
 
-function bd () {
-  location.reload();
-}
 
 b_play.addEventListener("click", () => {
   start_game();
